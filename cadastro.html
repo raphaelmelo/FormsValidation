@@ -7,76 +7,71 @@
     <link rel="stylesheet" href="./styles/cadastro.css">
     <title>Cadastro</title>
     <script src="./index.js" defer></script>
+    <script src="path/to/polyfill.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
 </head>
-        <!--  tela de login: vai tem que ter furmulario de login com dois campos -->
 <body>
     <header>
         <h1 class="TituloH1">Desafio Carreira <span> Única </span> Front-end</h1>
     </header>
-    <main>
-        <article class="Forms">
-          
-          <form action="" class="InputsArticle">
-            <h2>Pessoa Fisica</h2>
-                <div class="input-group mb-3">
-                    <input type="text" id="inputNomePF" placeholder="Nome" class="form-control" required>
-                  </div>
+        <main>
+          <article class="Forms">
+            <form action="" class="InputsArticle">
+              <h2>Pessoa Fisica</h2>
                   <div class="input-group mb-3">
-                    <input type="email" id="inputEmailPF" placeholder="Email" class="form-control" required>
-                  </div>
-                  <div class="input-group mb-3">
-                    <input type="text" id="inputCPF" placeholder="CPF" class="form-control" required>
-                  </div>
-                  <div class="input-group mb-3">
-                    <input type="text" id="inputEnderecoPF" placeholder="Endereço" class="form-control" required>
-                  </div>
-                  <div class="input-group mb-3">
-                    <input type="password"  id="inputSenhaPF" placeholder="Senha" class="form-control" required>
-                  </div>
-                <button id="submitPF"  type="submit" class="btn btn-primary" onclick="inputSubmitCadastroPF()">Cadastrar</button>
-          </form>
-
-          <form action="" class="InputsArticle" method="POST">
-            <h2>Pessoa Juridica</h2>
-            <div class="input-group mb-3">
-                    <input type="text" id="inputNomePJ" placeholder="Nome da Empresa" class="form-control" required>
-                  </div>
-                  <div class="input-group mb-3">
-                    <input type="email" id="inputEmailPJ" placeholder="Email" class="form-control" required>
-                  </div>
-                  <div class="input-group mb-3">
-                    <input type="text" id="inputCNPJ" placeholder="CNPJ" class="form-control" required>
-                  </div>
-                  <div class="input-group mb-3">
-                    <input type="text" id="inputEnderecoPJ" placeholder="Endereço" class="form-control" required>
-                  </div>
-                  <div class="input-group mb-3">
-                    <input type="password"  id="inputSenhaPJ" placeholder="Senha" class="form-control" required>
-                  </div>
-                <button id="submitPF"  type="submit" class="btn btn-primary" onclick="inputSubmitCadastroPJ()">Cadastrar</button>
-          </form>
+                      <input type="text" id="inputNomePF" placeholder="Nome" class="form-control" required>
+                    </div>
+                    <div class="input-group mb-3">
+                      <input type="email" id="inputEmailPF" placeholder="Email" class="form-control" required>
+                    </div>
+                    <div class="input-group mb-3">
+                      <input type="text" id="inputCPF" placeholder="CPF" class="form-control" required>
+                    </div>
+                    <div class="input-group mb-3">
+                      <input type="text" id="inputEnderecoPF" placeholder="Endereço" class="form-control" required>
+                    </div>
+                    <div class="input-group mb-3">
+                      <input type="password"  id="inputSenhaPF" placeholder="Senha" class="form-control" required>
+                    </div>
+                  <button id="submitPF"  type="submit" class="btn btn-primary" onclick="inputSubmitCadastroPF()">Cadastrar</button>
             </form>
-        </article>
-        <article>
-          <a href="/index.html" >
-            <button  class="btn btn-primary">Fazer Login</button>
-          </a>
-        </article>
-        <article>
-          <a href="/home.html" >
-            <button  class="btn btn-primary">Acessar a Loja</button>
-          </a>
-        </article>
-    </main>
-    <footer  >
-      <h6>Desenvolvido por Raphael Melo Gois</h6>
-  </footer>
+            <form action="" class="InputsArticle" method="POST">
+              <h2>Pessoa Juridica</h2>
+              <div class="input-group mb-3">
+                      <input type="text" id="inputNomePJ" placeholder="Nome da Empresa" class="form-control" required>
+                    </div>
+                    <div class="input-group mb-3">
+                      <input type="email" id="inputEmailPJ" placeholder="Email" class="form-control" required>
+                    </div>
+                    <div class="input-group mb-3">
+                      <input type="text" id="inputCNPJ" placeholder="CNPJ" class="form-control" required>
+                    </div>
+                    <div class="input-group mb-3">
+                      <input type="text" id="inputEnderecoPJ" placeholder="Endereço" class="form-control" required>
+                    </div>
+                    <div class="input-group mb-3">
+                      <input type="password"  id="inputSenhaPJ" placeholder="Senha" class="form-control" required>
+                    </div>
+                  <button id="submitPF"  type="submit" class="btn btn-primary" onclick="inputSubmitCadastroPJ()">Cadastrar</button>
+            </form>
+          </article>
+          <article>
+            <a href="/index.html" >
+              <button  class="btn btn-primary">Fazer Login</button>
+            </a>
+          </article>
+          <article>
+            <a href="/home.html" >
+              <button  class="btn btn-primary">Acessar a Loja</button>
+            </a>
+          </article>
+      </main>
+      <footer>
+          <h6>Desenvolvido por Raphael Melo Gois</h6>
+      </footer>
 </body>
 </html>

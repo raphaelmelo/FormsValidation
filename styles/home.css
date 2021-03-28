@@ -5,23 +5,19 @@
     margin: 0;
   }
   
-  body {
-    display:flex;
-    flex-direction: column;
-    background: orange !important;;
-
-  } 
+body {
+  display:flex;
+  flex-direction: column;
+  background: orange !important;;
+} 
   
 header {
   height: 10vh;
   background: #f3eaea;
   display: flex;
   justify-content: center;
-  align-items: center;
-
-  
+  align-items: center;  
 }
-
 
 .TituloH1 {
   font-family: "Righteous", sans-serif;
@@ -32,27 +28,23 @@ header {
   text-transform:uppercase;
 }
 
- 
-
 span {
   color: #b31b1b;
 }
 
- 
-  .banner {
+.banner {
+  padding: 10px 0;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-    padding: 10px 0;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .banner img{
-    max-width: 80vw;
-    margin:0 auto;
-    height: 80px;
-   }
-
+.banner img{
+  max-width: 80vw;
+  margin:0 auto;
+  height: 80px;
+}
    
 .carousel {
   width: 80vw;
@@ -61,28 +53,25 @@ span {
   overflow: hidden;
   position: relative;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
 
+.carousel:hover .controls {
+  opacity: 1;
+}
 
-  }
+.controls {
+  opacity: 0;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 99999;
+  transition: all ease 0.5s;
+}
 
-  .carousel:hover .controls {
-    opacity: 1;}
-
-  .controls {
-    opacity: 0;
-    display: flex;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    justify-content: space-between;
-    width: 100%;
-    z-index: 99999;
-    transition: all ease 0.5s;
-
-    
-  }
-
-  .control {
+.control {
     margin: 0 5px;
     display: flex;
     align-items: center;
@@ -122,17 +111,13 @@ span {
 
    
   main {
-      min-height:500px;
-        
-      display:flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  
-      width: 100%;
-
-  
-  } 
+    min-height:500px;   
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+} 
 
 .gallery {
     display: grid;
@@ -140,78 +125,71 @@ span {
     grid-template-rows: auto 1fr auto;
     grid-gap: 1.5rem;
     padding: 20px 0;
-    width: 70vw;
+    width: 70vw; 
+}
 
-
-    
-  }
 .galleryItem {  
     background: #f3eaea;
     width: 280px;  
     height: 340px;
-     object-fit: cover;
-    
+    object-fit: cover; 
 }
+
 .galleryItem img {  
   width: 280px;  
   height: 280px;
-   object-fit: cover;
-  
+  object-fit: cover;
 }
 
 .price {
-   width: 100%;
-   font-family: 'Roboto', sans-serif;
-   font-weight: 600;
-   color: #1c1c1c;
-   text-align: center;
-   padding: 6px 0;
-    margin:0;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: #1c1c1c;
+  text-align: center;
+  padding: 6px 0;
+  margin:0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-  }
+.price p{ 
+  color: #555;
+  font-size: 14px;
+  font-weight: 900;
+  padding: 0;
+  margin:0;  
+}
 
-  .price p{ 
-    color: #555;
-    font-size: 14px;
-    font-weight: 900;
-    padding: 0;
-    margin:0;
-   }
+.price span{
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  color: orange;  
+}
 
+.newsLetter {
+  margin: 0 auto;
+  min-width: 260px;
+  width:60%;
+  max-width: 400px;
+}
 
-   .price span{
-    width: 100%;
-     font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    color: orange;
+.input-group {
+  background:rgb(211, 210, 210);
+  width: 260px;
+}   
 
-   }
+.form-control {
+  height: 50px;
+  width: 250px; 
+}
 
-   .newsLetter {
-    margin: 0 auto;
-    min-width: 260px;
-    width:60%;
-    max-width: 400px;
-   }
-   .input-group {
-     background:rgb(211, 210, 210);
-     width: 260px;
-   } 
-   
-
-   .form-control {
-    height: 50px;
-    width: 250px; 
-
-   }
 .btn {
   height: 50px;
   width: 100px; 
-
 }
 
 footer {
@@ -224,14 +202,11 @@ footer {
 }
 
 footer h6 {
-   font-size: 14px;
+  font-size: 14px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   color: #1c1c1c; 
  }
-
-
-
  
  @media only screen and (max-width: 581px) {
   .gallery {
@@ -240,11 +215,7 @@ footer h6 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
   }
-
- 
-
  }
 
  

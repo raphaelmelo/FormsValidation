@@ -1,5 +1,3 @@
-
-
 * {
   padding: 0;
   margin: 0;
@@ -9,17 +7,15 @@ body {
   display:flex;
   flex-direction: column;
 }
+
 header {
   width: 100%;
   height: 10vh;
   background: #f3eaea;
   display: flex;
   justify-content: center;
-  align-items: center;
-
-  
+  align-items: center; 
 }
-
 
 .TituloH1 {
   font-family: "Righteous", sans-serif;
@@ -29,7 +25,6 @@ header {
   color: #1c1c1c; 
   text-transform:uppercase;
 }
- 
 
 span {
   color: #b31b1b;
@@ -38,14 +33,11 @@ span {
 main {
     min-height:500px;
     height:80vh;
-
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     background:orange;
-
 }
 
 .InputsArticle {
@@ -54,18 +46,16 @@ main {
     width: 280px;
 }
 
- 
-
 .recuperarSenha {
     text-align: center;
     padding: 20px 0 0;
 }
  
 .CadastroButao {
-
   display:flex;
   flex-direction: column;
 }
+
 a {
   text-align: center;
   color: #fff;

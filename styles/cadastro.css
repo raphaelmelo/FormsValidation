@@ -71,11 +71,12 @@
       display:flex;
       flex-direction: column;
       width: 200px;
-      padding: 40px 0;
-  }
+      padding: 10px 0;
+ 
+  } 
 
   footer {
-    width: 100%;
+    width: 100%rgb(255, 178, 34);
     height: 10vh;
     background: #ccc;
     display: flex;
