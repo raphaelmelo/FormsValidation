@@ -22,7 +22,7 @@
   
   .TituloH1 {
       font-family: "Righteous", sans-serif;
-      font-size: 24px;
+      font-size: clamp(16px, 4vw, 26px);
       font-family: 'Roboto', sans-serif;
       font-weight: 600;
       color: #1c1c1c; 
@@ -34,14 +34,12 @@
   }
   
   main {
-      min-height:500px;
-      height:80vh;
-  
+      height: auto;
+      min-height:80vh;
       display:flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-  
       background:orange;
   
   }
@@ -69,11 +67,11 @@
       text-align: center;
   }
    
-  .CadastroButao {
+  a {
       display:flex;
       flex-direction: column;
       width: 200px;
-      padding-top: 40px;
+      padding: 40px 0;
   }
 
   footer {
@@ -92,3 +90,15 @@
     color: #1c1c1c; 
    }
   
+
+   @media only screen and (max-width: 581px) {
+ 
+    .Forms {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 40px 0 0 0;
+  }
+
+  }
